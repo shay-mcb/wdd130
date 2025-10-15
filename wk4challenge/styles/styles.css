@@ -1,0 +1,46 @@
+
+footer {
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+}
+
+body {
+    background-color:cornflowerblue;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+#bulletpoints {
+    text-align: center;
+    color: black;
+    
+}
+
+#bulletpoint ul {
+    text-align: left;
+    display: inline-block;
+}
+
+#prophet-img {
+    text-align: center;
+
+}
+#educationquote {
+    text-align: center;
+    color: white;
+}
+
+#lastquote {
+    text-align: center;
+    color: white;
+}
