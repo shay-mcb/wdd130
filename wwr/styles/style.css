@@ -228,8 +228,71 @@ footer .social img {
     padding-top: 15px;
 }
 
+/* FAQ Page */
+
+#faq {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+
+#banner-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#banner-msg {
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+#banner-img {
+    width: 100%;
+}
+
+.faq-title {
+    color: white;
+    font-family: Limelight;
+    font-size: 2em;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.question-1 h2, .question-2 h2, .question-3 h2, .question-4 h2, .question-5 h2 {
+    color: white;
+    font-family: Roboto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.question-1 p, .question-2 p, .question-3 p, .question-4 p, .question-5 p {
+    color: black;
+    font-family: Roboto;
+    font-size: 1em;
+    padding-bottom: 15px;
+    text-align: left;
+    margin-left:20px;
+}
+
+#faq-river-img, #faq-river-img-2 {
+    border: 10px solid black;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px black;
+    height: 300px;
+    width: 400px;
+}
+
+#faq-river-img {
+    margin-left: 150px;
+    margin-right: 50px;
+}
+
+
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .home-grid, #faq, .faq-grid {
         display: block;
         height: auto;
     }
@@ -252,7 +315,7 @@ footer .social img {
     #hero-msg h1 {
         color: #6f7364;
     }
-    .home-title {
+    .home-title, .faq-title {
         font-size: 25px;
     }
     .rivers-card, .camping-card, .rapids-card { 
