@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <header>
-    <a id="logo_link" href="index.html">
-        <img class="logo" src="images/Yogi Writes.png" alt="yogi writes logo">
-    </a>
     <nav>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/Yogi Writes.png" alt="yogi writes logo">
+        </a>
         <a href="index.html">Home</a>
         <a href="creativeworks.html">Creative Works</a>
         <a href="aboutme.html">About Me</a>
@@ -33,6 +33,22 @@
         <h2 class="youtube">Check out my YouTube Channel for more!</h2>
         <img class="youtube-img" src="images/yogiwritesyoutube.png" alt="yogi writes youtube channel">
     </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display= "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 
 <footer>
