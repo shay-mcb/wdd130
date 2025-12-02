@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <header>
-    <a id="logo_link" href="index.html">
-        <img class="logo" src="images/Yogi Writes.png" alt="yogi writes logo">
-    </a>
     <nav>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/Yogi Writes.png" alt="yogi writes logo">
+        </a>
         <a href="index.html">Home</a>
         <a href="creativeworks.html">Creative Works</a>
         <a href="aboutme.html">About Me</a>
@@ -25,18 +25,35 @@
         </section>
     </div>
 </div>
-<body class="about-grid">
+<body>
     <section class="about-box">
-        <h2>Shay McBride</h2>
+        <h2 class="myname">Shay McBride</h2>
         <img class="personal-pic" src="images/personalpic.jpg" alt="shay mcbride">
-        <p>Hey there! I'm Shay, a yogi who writes. I'm a passionate yoga teacher and story teller that finds the best form of meditation to be with a notebook in one hand and a pen in the other. Some of my works include Talentless and Joy of the Rain. Glad you could be here! If you have any questions, feel free to contact me and follow me on my YouTube channel, Yogi_Writes.</p>
+        <p class="personal-bio">Hey there! I'm Shay, a yogi who writes. I'm a passionate yoga teacher and story teller that finds the best form of meditation to be with a notebook in one hand and a pen in the other. Some of my works include Talentless and Joy of the Rain. Glad you could be here! If you have any questions, feel free to contact me and follow me on my YouTube channel, Yogi_Writes.</p>
     </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display= "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 <footer>
      <p>Yogi Writes &copy; 2025 - Shay McBride</p>
     <p><a href="creativeworks.html">Creative Works</a></p>
     <p><a href="aboutme.html">About Me</a></p>
     <p><a href="contactme.html">Contact Me</a></p>
+    <p><a href="site-plan.html">Site Plan</a></p>
     <div class="social">
         <a href="https://facebook.com">
             <img src="images/facebook.png" alt="fb icon">
