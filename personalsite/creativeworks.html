@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <header>
-    <a id="logo_link" href="index.html">
-        <img class="logo" src="images/Yogi Writes.png" alt="yogi writes logo">
-    </a>
     <nav>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/Yogi Writes.png" alt="yogi writes logo">
+        </a>
         <a href="index.html">Home</a>
         <a href="creativeworks.html">Creative Works</a>
         <a href="aboutme.html">About Me</a>
@@ -29,8 +29,8 @@
     <section class="novel-box">
         <h2>Novels</h2>
         <img class="talentless-cover" src="images/Project Talentless.png" alt="talentless cover">
-        <h4>Talentless</h4>
-        <p>An impending war, religious obligations, and a pacifist. Aster is dragged into a mess of politics and trying to keep her oaths while a government coup is taking place under the surface.</p>
+        <h4 class="talentless">Talentless</h4>
+        <p class="novel-para">An impending war, religious obligations, and a pacifist. Aster is dragged into a mess of politics and trying to keep her oaths while a government coup is taking place under the surface.</p>
     </section>
     <section class="shortfiction-box">
         <h2>Short Fiction</h2>
@@ -42,15 +42,32 @@
     <section class="wip-box">
         <h2>Works in Progress</h2>
         <img class="wip-img" src="images/books-assortment-with-white-background.jpg" alt="book stack">
-        <h4>NaNoWriMo 2025 Challenge</h4>
-        <p>After the death of her parents and the mysterious disappearance of her brother, Rowan finds herself following a path of clues left by her father in pursuit of a power sought out by neighboring colonies. The planet is dying and she needs to harvest the power of the elements to save it. Can she make it in time?</p>
+        <h4 class="nano">NaNoWriMo 2025 Challenge</h4>
+        <p class="nano-para">After the death of her parents and the mysterious disappearance of her brother, Rowan finds herself following a path of clues left by her father in pursuit of a power sought out by neighboring colonies. The planet is dying and she needs to harvest the power of the elements to save it. Can she make it in time?</p>
     </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display= "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 <footer>
      <p>Yogi Writes &copy; 2025 - Shay McBride</p>
     <p><a href="creativeworks.html">Creative Works</a></p>
     <p><a href="aboutme.html">About Me</a></p>
     <p><a href="contactme.html">Contact Me</a></p>
+    <p><a href="site-plan.html">Site Plan</a></p>
     <div class="social">
         <a href="https://facebook.com">
             <img src="images/facebook.png" alt="fb icon">
